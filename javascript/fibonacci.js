@@ -1,5 +1,24 @@
 function fibonacci(num) {
-  // type your code here
+  if (num === 0){
+    return 0
+  }
+  // else {
+    let temp 
+    let first = 0
+    let second = 1
+    for (let i = 0; i < num - 1; i++){
+    // while (num >= 1){
+      // console.log(temp)
+      temp = second
+      second = first + second
+      first = temp
+      // num --
+      // sum = (first + second)
+      // first = second
+      // second = sum
+    }
+    return second
+  //}
 }
 
 if (require.main === module) {
